@@ -36,12 +36,12 @@ const ContentGenerationHistory = () => {
         </Link>
         {/* Content history list */}
         <div className="bg-white shadow overflow-hidden sm:rounded-md">
-          {data?.user?.contentHistory?.lenght <= 0 ? (
+          {data?.user?.history?.length <= 0 ? (
             <h1>No history found</h1>
           ) : (
             <ul className="divide-y divide-gray-200">
               {/* Static example list item */}
-              {data?.user?.contentHistory?.map((content) => {
+              {data?.user?.history?.map((content) => {
                 console.log(content);
                 return (
                   <li className="px-6 py-4 flex items-center justify-between space-x-4">
